@@ -1,0 +1,256 @@
+/* small screen */
+@media(max-width:767px) {
+
+    /* landing page*/
+    /* .container {
+        width: 100%;
+    } */
+
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing-page {
+        height: fit-content;
+    }
+
+    .landing-page .navbar {
+        display: none;
+    }
+
+    .landing-page .home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .landing-page .home .left-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing-page .home .left-home .btn {
+        flex-direction: column;
+    }
+
+    .landing-page .home .left-home .btn .book {
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+
+    /* our chefs */
+    .chefs-gallery {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .chefs .chefs-gallery .chef-card {
+        width: 100%;
+    }
+
+    /* gallery */
+    .gallery .gallery-food {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        margin: 20px auto;
+        width: 80%;
+        height: auto;
+    }
+
+    .gallery .gallery-food img {
+        height: fit-content;
+    }
+
+    /* contact */
+
+    .contact .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+    }
+
+    .contact .info .info-card {
+        width: 100%;
+    }
+
+    .contact form .data {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact form .data input {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    /* footer */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer .social-media .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    .footer .left-side,
+    .footer .middle,
+    .footer .right-side {
+        width: 100%;
+    }
+
+    .footer .middle .mini-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .middle input {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .footer .middle button {
+        width: 100%;
+    }
+
+    .footer .middle h3 {
+        margin-top: 20px;
+    }
+
+}
+
+/* medium screen */
+
+@media (min-width:768px) and (max-width:991px) {
+    .landing-page {
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+
+    .landing-page .home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing-page .home img {
+        margin: auto;
+    }
+
+    .landing-page .home .left-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing-page .home .left-home .btn .book {
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+
+    /* chef */
+    .chefs-gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .chefs .chefs-gallery .chef-card {
+        width: 48%;
+    }
+
+    /* gallery */
+    .gallery .gallery-food {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 1400px;
+    }
+
+    .gallery .gallery-food .image-box {
+        width: 80%;
+    }
+
+    /* contact */
+
+    .contact .info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact .info .info-card {
+        width: 40%;
+    }
+
+    .contact form .data {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact form .data input {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    /* footer */
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .footer .left-side,
+    .footer .right-side {
+        width: 46%;
+    }
+
+    .footer .middle {
+        order: 1;
+    }
+
+    .footer .middle input {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .footer .middle button {
+        width: 100%;
+    }
+
+    .footer .middle {
+        width: 100%;
+    }
+
+    .footer .middle input {
+        width: 70%;
+        padding: 15px;
+    }
+
+    .footer .middle button {
+        width: 20%;
+    }
+}
