@@ -270,6 +270,7 @@ body {
     border-radius: 20px;
     box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
     transition: scale 0.3s;
+    overflow: hidden;
 }
 
 .chefs .chefs-gallery .chef-card:hover {
