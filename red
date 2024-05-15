@@ -70,25 +70,29 @@ body {
     padding: 10px 0;
     margin-right: 25px;
     transition: 0.3s;
-}
-
-.navbar .content li:hover {
-    border-bottom: 3px solid red;
+    position:realtive;
 }
 
 .navbar .content li a {
     color: #7f7f90;
     font-size: 19px;
     font-weight: 600;
-    transition: all linear 0.3s;
+    transition: width 0.3s;
 }
 
-.navbar .content li a:hover {
-    color: #000;
+.navbar .content li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transition: width 0.3s;
 }
 
-.navbar .content li.home {
-    border-bottom: 3px solid red;
+.navbar .content li a:hover::after {
+    width: 100%;
 }
 
 .navbar .content li.home a {
